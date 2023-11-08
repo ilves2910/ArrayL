@@ -2,14 +2,16 @@
  измерьте время, которое потрачено на это. Сравните результаты.*/
 import javax.lang.model.element.NestingKind;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.LinkedList;
-import java.util.List;
-
 
 public class Main {
     public static void main(String[] args) {
+
+/*long startTime = System.nanoTime();
+// блок кода, время выполнения которого нужно измерить
+long endTime = System.nanoTime();
+
+long timeElapsed = endTime - startTime;*/
 
         int el = 500000;
         long startTimeAL = System.nanoTime();
@@ -36,7 +38,6 @@ if (timeAL>timeLL) {
     System.out.println("Время для ArrayList<Integer> требуется больше");
 } else System.out.println("Время для LinkedList<Integer> требуется больше");
 
-//--------------------
         /*
 
 long startTime1 = System.currentTimeMillis();
@@ -68,6 +69,5 @@ long timeElapsed = endTime - startTime;*/
 if (timeAL1>timeLL1) {
     System.out.println("Время   для ArrayList<Integer> требуется больше");
 } else System.out.println("Время для LinkedList<Integer> требуется больше");
-
     }
 }
