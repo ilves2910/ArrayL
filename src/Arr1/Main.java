@@ -1,4 +1,4 @@
-/*Д/з Напишите метод, который добавляет 500000 элементов в ArrayList и LinkedList и
+package Arr1;/*Д/з Напишите метод, который добавляет 500000 элементов в ArrayList и LinkedList и
  измерьте время, которое потрачено на это. Сравните результаты.*/
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -71,7 +71,7 @@ long timeElapsed = endTime - startTime;*/
 
         long startTimeALSS = System.nanoTime();
         ArrayList<String> ListSS = new ArrayList<>();
-        for (int i = 0; i < 500000; i++) {
+        for (int i = 0; i < el; i++) {
             ListSS.add(String.valueOf(i));
         }
         long endTimeALSS = System.nanoTime();
@@ -79,7 +79,7 @@ long timeElapsed = endTime - startTime;*/
 //---------------------
         long startTimeLLS = System.nanoTime();
         LinkedList<String> ListS = new LinkedList<>();
-        for (int i = 0; i < 500000; i++) {
+        for (int i = 0; i < el; i++) {
             ListS.add(String.valueOf(i));}
             long endTimeLLS = System.nanoTime();
             long timeLLS = endTimeLLS - startTimeLLS;
@@ -96,7 +96,7 @@ long timeElapsed = endTime - startTime;*/
 
         long startTimeALSSM = System.currentTimeMillis();
         ArrayList<String> ListSSM = new ArrayList<>();
-        for (int i = 0; i < 500000; i++) {
+        for (int i = 0; i < el; i++) {
             ListSSM.add(String.valueOf(i));
         }
         long endTimeALSSM = System.currentTimeMillis();
@@ -104,7 +104,7 @@ long timeElapsed = endTime - startTime;*/
 //---------------------
         long startTimeLLSM = System.currentTimeMillis();
         LinkedList<String> ListSM = new LinkedList<>();
-        for (int i = 0; i < 500000; i++) {
+        for (int i = 0; i < el; i++) {
             ListSM.add(String.valueOf(i));}
        long endTimeLLSM = System.currentTimeMillis();
         long timeLLSM = endTimeLLSM - startTimeLLSM;
